@@ -1,14 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Toaster } from "@/components/ui/toaster";
-import LoginPage from "@/pages/Login";
+import React from "react";
+import { RegistrationForm } from "./components/RegistrationForm";
+import { Toaster } from "./components/ui/toast";
 
-export default function App() {
+function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LoginPage />} />
-      </Routes>
+    <div className="App">
+      <RegistrationForm />
       <Toaster />
-    </BrowserRouter>
+    </div>
   );
 }
+
+export default App;
