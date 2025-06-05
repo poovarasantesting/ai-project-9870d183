@@ -1,13 +1,12 @@
-import React from "react";
-import { RegistrationForm } from "./components/RegistrationForm";
-import { Toaster } from "./components/ui/toast";
+import { UserForm } from "./components/UserForm";
+import { Toaster } from "./components/ui/toaster";
 
 function App() {
   return (
-    <div className="App">
-      <RegistrationForm />
+    <main className="min-h-screen bg-background">
+      <UserForm />
       <Toaster />
-    </div>
+    </main>
   );
 }
 
